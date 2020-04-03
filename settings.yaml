@@ -1,0 +1,24 @@
+approach:
+  name: CNN
+  type: V1
+  input_shape:
+    - 64
+    - 64
+    - 3
+  optimizer: Adam
+  lr: 0.0001
+  num_samples: 5793
+  num_val_samples: 679
+  batch_size: 30
+  epochs: 2
+train_gen:
+  name: image_generator
+  validation_list: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\validation_list.txt
+  path: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\images
+val_gen:
+  name: validation_images_generator
+  validation_list: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\validation_list.txt
+  path: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\images
+test_gen:
+  name: image_generator
+experiments_dir: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\experiments
