@@ -1,0 +1,22 @@
+approach:
+  name: NN
+  type: LSTM_V1
+  mode: train
+  input_shape:
+    - 1000
+    - 1
+  optimizer: Adam
+  lr: 0.001
+  num_samples: 64722
+  num_val_samples: 6798
+  batch_size: 256
+  epochs: 2
+experiments_dir: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\experiments
+train_gen:
+  name: generator_lstm
+  validation_list: 'C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\validation_list.txt'
+  path: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\audio
+val_gen:
+  name: validation_lstm_generator
+  path: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\audio
+  validation_list: 'C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\validation_list.txt'

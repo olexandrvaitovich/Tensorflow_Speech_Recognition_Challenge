@@ -1,0 +1,20 @@
+approach:
+  name: NN
+  type: NN_V2
+  mode: train
+  input_shape:
+    - 174
+  optimizer: Adam
+  lr: 0.001
+  num_samples: 64722
+  num_val_samples: 6798
+  batch_size: 1024
+  epochs: 100
+experiments_dir: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\experiments
+train_gen:
+  name: generator_nn
+  path: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\train_df.csv
+val_gen:
+  name: generator_nn
+  path: C:\Users\oleksandr.vaitovych\PycharmProjects\course_project\data\train\val_df.csv
+  validation_list: 
